@@ -2,9 +2,9 @@
 layout:     post
 title:      Docker方式启动Connect Debezium
 subtitle:   Docker方式启动Connect Debezium
-date:       2016-12-13
+date:       2018-08-23
 author:     BY
-header-img: /img/mine.jpg
+header-img: img/mine.jpg
 catalog: 	 true
 tags:
     - kafka
