@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      定时器 你真的会使用吗？
+subtitle:   iOS定时器详解
+date:       2016-12-13
+author:     BY
+header-img: /img/mine.jpg
+catalog: 	 true
+tags:
+    - kafka
+    - debezium
+---
+
+
 > 以docker的方式启动debezium。
 
 * Start Zookeeper
