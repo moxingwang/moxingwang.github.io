@@ -11,7 +11,6 @@ tags:
     - debezium
 ---
 
-
 > 以docker的方式启动debezium。
 
 * Start Zookeeper
