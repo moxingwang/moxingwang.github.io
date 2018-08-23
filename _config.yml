@@ -24,6 +24,11 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: m65536
 github_username:  moxingwang
 
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: /img/mine.jpg
+
 # Build settings
 markdown: kramdown
 theme: minima
