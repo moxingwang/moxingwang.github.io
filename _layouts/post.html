@@ -169,15 +169,6 @@ layout: default
 </article>
 
 
-{% if page.comments != false %}
-<script>
-    var idcomments_acct = 'm65536';
-    var idcomments_post_id = '{{ page.url }}';
-    var idcomments_post_url;
-</script>
-<span id="IDCommentsPostTitle" style="display:none"></span>
-<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-{% endif %}
 
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
@@ -232,8 +223,4 @@ layout: default
         }
     }
 </style>
-{% endif %}
-
-{% if site.intensedebate_comments %}
-    {% include intensedebate-comments.html %}
 {% endif %}

@@ -58,7 +58,7 @@ kramdown:
 # 评论系统
 # Disqus（https://disqus.com/）
 #disqus_username: m65536
-intensedebate_comments: true
+#intensedebate_comments: true
 
 # Gitalk
 #gitalk:
