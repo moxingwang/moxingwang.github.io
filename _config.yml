@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: https://moxingwang.github.io/
 date_format: "ordinal"
 title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+subtitle: "MoXingwang"
+description: "M.莫的个人博客"
+keywords: MoXingwang, 莫星辋
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
@@ -15,12 +15,12 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
-organization: zkh360.com
-organization_url: http://www.zkh360.com
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+author: MoXingwang
+organization: https://moxingwang.github.io/
+organization_url: https://moxingwang.github.io/
+github_username: moxingwang
+location: Shanghai, China
+email: m655363@163.com
 
 # ---------------- #
 #    Navigation    #
