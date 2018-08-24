@@ -1,3 +1,12 @@
+---
+layout: post
+title: '如何在SpringBoot里使用SwaggerUI'
+date: 2018-08-24
+author: M.莫
+cover: 'source/article/article_adult-casual-cute-962784.jpg'
+tags: swagger
+---
+
 ## Swagger
 > Swagger是一种和语言无关的规范和框架，用于定义服务接口，主要用于描述RESTful的API。它专注于为API创建优秀的文档和客户端库。支持Swagger的API可以为API方法生成交互式的文档，让用户可以通过以可视化的方式试验，查看请求和响应、头文件和返回代码，从而发现API的功能。
 
