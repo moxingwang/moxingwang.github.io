@@ -51,7 +51,7 @@ a {
 
 /*** Main style ***/
 .g-container {
-  width: 960px; }
+  width: 695px; }
 
 .g-header {
   position: fixed;
@@ -184,8 +184,8 @@ a {
     clear: both; }
 
 .article-list {
-  /*float: left;*/
-  /*width: 695px;*/
+  float: left;
+  width: 695px;
 }
   .article-list .article-item {
     width: 100%;
