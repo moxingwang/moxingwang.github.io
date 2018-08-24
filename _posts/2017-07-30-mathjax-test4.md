@@ -6,7 +6,7 @@ categories: test
 tags: mathjax 
 ---
 
-mathjax in markdown :)
+mathjax in markdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdownmarkdown :)
 
 **这是一个不`align`的公式**：
 
