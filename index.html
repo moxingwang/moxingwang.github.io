@@ -34,6 +34,7 @@ description: 或许是最漂亮的Jekyll主题
                     <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
                     {% endif %}
                 </section>
+
                 <footer class="post-meta">
                     <div class="post-tags">
                         {% if post.tags.size > 0 %}
@@ -45,16 +46,6 @@ description: 或许是最漂亮的Jekyll主题
                     <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
                 </footer>
 
-                <footer class="post-meta">
-                    <div class="post-tags">
-                        {% if post.tags.size > 0 %}
-                        {% for tag in post.tags  %}
-                        <a href={{ "about.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ about }}</a>
-                        {% endfor %}
-                        {% endif %}
-                    </div>
-                    <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
-                </footer>
             </article>
         {% endfor %}
 
