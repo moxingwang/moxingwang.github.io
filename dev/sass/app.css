@@ -365,6 +365,12 @@ a {
     .g-sidebar section .tag {
       margin-bottom: 8px; }
 
+header .search-card{
+  margin-top: -10px;
+  padding: 0;
+  float: left;
+  width: 400px;
+}
 .search-card {
   position: relative;
   margin-top: 16px;
