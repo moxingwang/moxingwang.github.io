@@ -4,6 +4,14 @@
       <a href="{{ "/" | relative_url }}"></a>
     </div>
 
+    <style>
+        header .search-card{
+            margin-top: -10px;
+            padding: 0;
+            float: left;
+            width: 550px;
+        }
+    </style>
     {% if site.search %}
     <div class="search-card">
         <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
