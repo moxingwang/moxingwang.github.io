@@ -1,3 +1,12 @@
+---
+layout: post
+title: '理解分析java集合操作之ConcurrentModificationException'
+date: 2018-08-24
+author: M.莫
+cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
+tags: ConcurrentModificationException
+---
+
 相信不少同学在处理List的时候遇到过下面的Exception，
 ````
 Exception in thread "main" java.util.ConcurrentModificationException
