@@ -12,6 +12,17 @@ description: 或许是最漂亮的Jekyll主题
     {% if page.header-img %}
     <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
     {% endif %}
+
+    <aside class="g-sidebar-wrapper">
+        {% if site.search %}
+        <div class="search-card">
+            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
+        </div>
+        {% endif %}
+
+    </aside>
 </div>
 
 <main class="g-container home-content">
@@ -55,16 +66,7 @@ description: 或许是最漂亮的Jekyll主题
 
     </div>
 
-    <aside class="g-sidebar-wrapper">
-        {% if site.search %}
-        <div class="search-card">
-            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
-            <i class="iconfont icon-search"></i>
-            <div class="search_result"></div>
-        </div>
-        {% endif %}
 
-    </aside>
 
 </main>
 
