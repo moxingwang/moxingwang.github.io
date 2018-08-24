@@ -13,12 +13,20 @@ layout: default
 
     <ul class="tags-list">
         <li>
-            <a href="baidu.com" class="tag">key1</a>
-            <a href="baidu.com" class="tag">key2</a>
+            {% if site.recommend-tags and site.tags.size>0 %}
+            <section class="tags-card">
+                {% for tag in site.tags %}
+                {% if forloop.index > site.recommend-condition-size %}
+                {% break %}
+                {% endif %}
+                <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
+                {% endfor %}
+            </section>
+            {% endif %}
         </li>
     </ul>
 
-    <div class="g-sidebar">
+    <div class="g-container">
 
         <!--主页作者-->
         <section class="author-card">
@@ -41,17 +49,6 @@ layout: default
             </ul>
             {% endif %}
         </section>
-
-        {% if site.recommend-tags and site.tags.size>0 %}
-        <section class="tags-card">
-            {% for tag in site.tags %}
-            {% if forloop.index > site.recommend-condition-size %}
-            {% break %}
-            {% endif %}
-            <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
-            {% endfor %}
-        </section>
-        {% endif %}
     </div>
 </main>
 
