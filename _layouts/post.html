@@ -45,62 +45,7 @@
     {% endif %}
   </div>
 
-  <!--文章尾部作者-->
-  <!--<section class="author-detail">
-    <section class="post-footer-item author-card">
-      <div class="avatar">
-        <img src="{{ site.avatar | absolute_url }}" alt="">
-      </div>
-      <div class="author-name" rel="author">{{ site.author }}</div>
-      <div class="bio">
-        <p>{{ site.bio }}</p>
-      </div>
-      {% if site.sns.size > 0 %}
-      <ul class="sns-links">
-        {% for s in site.sns %}
-        <li>
-          <a href="{{ s[1] }}" target="_blank">
-                    <i class="iconfont icon-{{ s[0] }}"></i>
-                </a>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </section>
-    <section class="post-footer-item read-next">
-      {% if page.next.url %}
-      <div class="read-next-item">
-        <a href="{{ page.next.url }}" class="read-next-link"></a>
-        <section>
-          <span>{{ page.next.title }}</span>
-          <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
-        </section>
-        {% if page.next.cover %}
-        <div class="filter"></div>
-        <img src="{{ page.next.cover }}" alt="">
-        {% endif %}
-     </div>
-      {% endif %}
-
-      {% if page.previous.url %}
-      <div class="read-next-item">
-        <a href="{{ page.previous.url }}" class="read-next-link"></a>
-          <section>
-            <span>{{ page.previous.title }}</span>
-            <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
-          </section>
-          {% if page.previous.cover %}
-          <div class="filter"></div>
-          <img src="{{ page.previous.cover }}" alt="">
-          {% endif %}
-      </div>
-      {% endif %}
-    </section>
-    <section class="post-footer-item comment">
-      <div id="disqus_thread"></div>
-    </section>
-  </section>-->
-
+  {% include discuss.html %}
   {% include footer.html %}
 
 
