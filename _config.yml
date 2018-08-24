@@ -17,8 +17,8 @@ theme_settings:
   header_text: > #two or three lines to describe your site
      <p>Change header text in <code>_config.yml</code> <br> to update this feature.</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
-  footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/moxingwang/moxingwang.github.io">Type on Strap</a>
+#  footer_text: >
+#   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/moxingwang/moxingwang.github.io">Type on Strap</a>
 
   # Icons
   rss: true  # Make sure you created a feed.xml with feed.xml layout
