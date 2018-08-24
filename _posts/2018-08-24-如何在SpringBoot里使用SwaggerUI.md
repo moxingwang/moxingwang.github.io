@@ -3,7 +3,7 @@ layout: post
 title: '如何在SpringBoot里使用SwaggerUI'
 date: 2018-08-24
 author: M.莫
-cover: 'source/article/article_adult-casual-cute-962784.jpg'
+cover: 'source/article/article_beautiful-beauty-blond-289225.jpg'
 tags: swagger
 ---
 
