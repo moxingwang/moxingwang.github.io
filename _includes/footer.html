@@ -1,11 +1,26 @@
 <footer class="g-footer">
-  <section>{{ site.title }} ©
-  {% assign current = "now" | date: "%Y" | plus: 0%}
-  {% unless site.footer.since and site.footer.since == current %}
-    {{ site.footer.since }}
-    -
-  {% endunless %}
-  {{ current }}
+  <section class="post-footer-item">
+
+      {% if site.comments.livere %}
+      <!-- 来必力City版安装代码 -->
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTIxNy8xNTc0NA==">
+          <script type="text/javascript">
+              (function(d, s) {
+                  var j, e = d.getElementsByTagName(s)[0];
+
+                  if (typeof LivereTower === 'function') { return; }
+
+                  j = d.createElement(s);
+                  j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                  j.async = true;
+
+                  e.parentNode.insertBefore(j, e);
+              })(document, 'script');
+          </script>
+          <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+      </div>
+      <!-- City版安装代码已完成 -->
+      {% endif %}
+
   </section>
-  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="https://github.com/kaeyleo/jekyll-theme-H2O">Theme H2O</a></section>
 </footer>
