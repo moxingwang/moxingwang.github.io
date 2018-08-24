@@ -5,7 +5,7 @@ description: 或许是最漂亮的Jekyll主题
 ---
 
 {% include header.html %}
-<style>
+<!--<style>
     .g-sidebar-wrapper {
         float: none;
         width: 900px;
@@ -16,7 +16,7 @@ description: 或许是最漂亮的Jekyll主题
     }
     .article-list {float: none;width: 900px;margin: 0 auto;}
     .search-card .search_result{z-index: 1000}
-</style>
+</style>-->
 
 
 <div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
@@ -26,15 +26,7 @@ description: 或许是最漂亮的Jekyll主题
     <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
     {% endif %}
 </div>
-<aside class="g-sidebar-wrapper">
-    {% if site.search %}
-    <div class="search-card">
-        <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
-        <i class="iconfont icon-search"></i>
-        <div class="search_result"></div>
-    </div>
-    {% endif %}
-</aside>
+
 <main class="g-container home-content">
     <div class="article-list">
         {% for post in paginator.posts %}
