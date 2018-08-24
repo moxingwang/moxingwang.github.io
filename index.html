@@ -20,11 +20,23 @@ description: 或许是最漂亮的Jekyll主题
 
 
 <div class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}" data-theme="{{ site.theme-color }}">
+
+    {% if site.search %}
+    <div class="search-card">
+        <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+        <i class="iconfont icon-search"></i>
+        <div class="search_result"></div>
+    </div>
+    {% endif %}
+
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
     {% if page.header-img %}
     <img class="header-img" src="{{ page.header-img | prepend: site.baseurl }}" alt="">
     {% endif %}
+
+
+
 </div>
 
 <main class="g-container home-content">
