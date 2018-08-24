@@ -184,7 +184,7 @@ a {
     clear: both; }
 
 .article-list {
-  float: left;
+  /*float: left;*/
   /*width: 695px;*/
 }
   .article-list .article-item {
