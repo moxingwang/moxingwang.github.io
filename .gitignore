@@ -1,0 +1,11 @@
+/.settings/
+/.project
+/.idea/
+/.dubbo/
+/.DS_Store
+*.iml
+*.log
+order-*.properties
+order-*.properties.lock
+/conf/
+/disconf/
