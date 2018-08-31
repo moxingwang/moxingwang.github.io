@@ -1,3 +1,5 @@
+> official : [http://theme-next.simpleyyt.com/getting-started.html](http://theme-next.simpleyyt.com/getting-started.html)
+
 # NexT
 
 > 精于心，简于形
