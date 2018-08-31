@@ -90,10 +90,10 @@ rss:
 #since: 2015
 
 # icon between year and author @Footer
-authoricon: heart
+#authoricon: heart
 
 # Footer `powered-by` and `theme-info` copyright
-copyright: true
+#copyright: true
 
 # ---------------------------------------------------------------
 # SEO Settings
