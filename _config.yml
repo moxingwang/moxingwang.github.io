@@ -356,7 +356,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night bright
+highlight_theme: normal
 
 
 # ---------------------------------------------------------------
@@ -582,7 +582,7 @@ exturl: false
 #! ---------------------------------------------------------------
 
 # Motion
-use_motion: true
+use_motion: false
 
 # Fancybox
 fancybox: true
