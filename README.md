@@ -1,4 +1,6 @@
-> official : [http://theme-next.simpleyyt.com/getting-started.html](http://theme-next.simpleyyt.com/getting-started.html)
+> official :
+* [http://theme-next.simpleyyt.com/getting-started.html](http://theme-next.simpleyyt.com/getting-started.html)
+* [https://github.com/iissnan/hexo-theme-next](https://github.com/iissnan/hexo-theme-next)
 
 # NexT
 
