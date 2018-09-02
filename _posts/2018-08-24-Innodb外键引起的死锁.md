@@ -52,11 +52,11 @@ commit ;
 
  * 事务A
   
-  ![图2](https://raw.githubusercontent.com/moxingwang/collection/master/resources/image/死锁事务模拟2.png)
+  ![图2](https://raw.githubusercontent.com/moxingwang/resource/master/image/死锁事务模拟2.png)
 
  * 事务B
   
-  ![图1](https://raw.githubusercontent.com/moxingwang/collection/master/resources/image/死锁事务模拟.jpg)
+  ![图1](https://raw.githubusercontent.com/moxingwang/resource/master/image/死锁事务模拟.jpg)
 
   这里我们使用TA(1)表示执行第一个事务的第一行代码。首先我们执行TA(1)和TA(2)，然后执行TB(1),TB(2)，然后在执行TA(3),再执行TB(3),此时得到结构如下。
 
@@ -81,7 +81,7 @@ commit ;
  为了理解上文中死锁的原因，必须要理解清楚Innodb的锁的机制，MySQL锁的机制文章很多，可以去官网找文档或者阅读他人的博客，这里给出一篇博客[快速了解innodb锁概念](https://www.cnblogs.com/janehoo/p/5603983.html)， [MySQL InnoDB自增长锁和外键锁](http://www.ywnds.com/?p=9129)以便于我们理解本文中的死锁问题。
 
 * 分析
-![图3](https://raw.githubusercontent.com/moxingwang/collection/master/resources/image/MySQL_deadlock.jpg)
+![图3](https://raw.githubusercontent.com/moxingwang/resource/master/image/MySQL_deadlock.jpg)
 
  我们用这一张图分析完为什么死锁，在第5步和第6步的时候发生了相互等待，Innodb在TB中检查到了死锁，反过来思考，加入数据库删除了外键，在第2步我第3步做insert db_payment操作的时候都没有对db_order id=1的这行数据加入S锁，那么就没有步骤5对步骤4的S锁等待，显然这个执行过程只有步骤6对步骤5等待，TAcommit之后，TB就会获得锁执行下一步commit。
 
