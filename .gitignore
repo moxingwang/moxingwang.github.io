@@ -10,3 +10,4 @@ order-*.properties.lock
 /conf/
 /disconf/
 /_site/
+*.DS_Store*
