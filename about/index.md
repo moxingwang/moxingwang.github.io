@@ -3,4 +3,4 @@ layout: page
 type: about
 ---
 
-JAVA Programmer
+JAVA Developer
