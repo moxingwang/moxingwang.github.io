@@ -439,7 +439,7 @@ gitalk:
 google_site_verification: eBNync34c1Kvqe684Ng77YhAaXmfl_IGGzqSvGL6ILk
 
 # Google Analytics
-google_analytics: UA-125621777-1
+#google_analytics: UA-125621777-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
