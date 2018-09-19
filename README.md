@@ -2,6 +2,8 @@
 * [http://theme-next.simpleyyt.com/getting-started.html](http://theme-next.simpleyyt.com/getting-started.html)
 * [https://github.com/Simpleyyt/jekyll-theme-next](https://github.com/Simpleyyt/jekyll-theme-next)
 
+
+
 # CHANGE
 * 去图标,_includes/_partials/head.html line 61
 ```$xslt
