@@ -79,7 +79,7 @@ plugins:
 favicon: /assets/favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "moxingwang,莫星辋"
+keywords: "moxingwang,莫星辋,m65536"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -214,9 +214,9 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  GitHub: https://github.com/moxingwang
+  GitHub: https://github.com/m65536
   微博: http://weibo.com/mxwth
-  知乎: http://www.zhihu.com/people/chris_mo
+  知乎: https://www.zhihu.com/people/m65536/activities
 #  掘金: http://juejin.im/user/5896b56a61ff4b006b0d7312
 
 
