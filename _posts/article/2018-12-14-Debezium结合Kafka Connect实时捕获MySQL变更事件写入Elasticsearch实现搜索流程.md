@@ -101,7 +101,7 @@ connector创建成功后,接下来应该测试debezium是否开始工作了,MySQ
 
 `[注意事项]`
 
-  笔者在配置connector的过程中也遇到过了好多问题,一些比较重要的东西也记录下来了,如果你在使用过程中出现问题可以查看文末`常见问题`里面是否有同样的问题.
+  笔者在配置connector的过程中也遇到过了好多问题,一些比较重要的东西也记录下来了,如果你在使用过程中出现问题可以查看文末`常见问题`里面是否有同样的问题.
 
 #### debezium kafka topic消费
   在上面的debezium配置中可以看到参数`database.server.name`,`database.whitelist`,debezium connector会处理MySQL的binlog后对应数据库不同的表将消息发送到不通的topic上,其中这些topic的构成方式为:[database.server.name].[数据库名称].[表名称],记下来按步骤操作.
@@ -117,7 +117,7 @@ connector创建成功后,接下来应该测试debezium是否开始工作了,MySQ
 
 #### spring boot消费kafka消息并且写入elasticsearch中
   
-* Demo代码已经在[https://github.com/m65536/practice/tree/master/search/elasticsearch](https://github.com/m65536/practice/tree/master/search/elasticsearch)全部实现.下载后配合上面安装好了的环境可以直接启动运行(当前版本使用的6.5,如果需要使用2.X,es客户端配置略有不同).
+* Demo代码已经在[https://github.com/m65536/practice/tree/master/search/elasticsearch](https://github.com/m65536/practice/tree/master/search/elasticsearch)全部实现.下载后配合上面安装好了的环境可以直接启动运行(当前版本使用的6.5,如果需要使用2.X,es客户端配置略有不同).
 
 * [Index Templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html#indices-templates)
 
