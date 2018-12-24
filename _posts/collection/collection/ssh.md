@@ -1,0 +1,1 @@
+[mac电脑iTerm2链接linux服务器断线解决方案](http://www.haorooms.com/post/mac_iterm2_ssh)

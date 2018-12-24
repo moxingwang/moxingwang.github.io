@@ -1,0 +1,1 @@
+[佛跳墙](https://fotiaoqiang.pro/index.html)

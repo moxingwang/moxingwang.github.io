@@ -1,0 +1,1 @@
+[Java PermGen 去哪里了?](http://ifeve.com/java-permgen-removed/)
