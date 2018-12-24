@@ -23,3 +23,14 @@ headers.add("Accept", MediaType.APPLICATION_JSON.toString());
 
 ResponseEntity<Map> resp = restTemplate.postForEntity("https://www.xxxx.com/test?schema=json&param={reqParam}", new HttpEntity<String>(headers), Map.class, reqParam);
 ```
+
+### GET接口如何使用Header
+```aidl
+HttpHeaders headers = new HttpHeaders();
+headers.add("Cookie", "AccessToken="+ accessToken);
+HttpEntity entity = new HttpEntity(headers);
+
+String loginUrl = "https://www.xxxx.com/test";
+
+ResponseEntity<String> response = restTemplate.exchange(loginUrl, HttpMethod.GET, entity, String.class);
+```
