@@ -44,7 +44,9 @@ curl  -XPUT -H  "Content-Type:application/json"  'http://localhost:9200/myindex'
 }
 '
 ```
+
 * 测试分词器
+
 ```
 curl  -XPOST -H  "Content-Type:application/json"  'http://localhost:9200/myindex/_analyze' -d '{
   "text":"OD5046240000014238",
@@ -55,6 +57,7 @@ curl  -XPOST -H  "Content-Type:application/json"  'http://localhost:9200/myindex
 ```
 
 返回结果
+
 ```
 {
   "tokens": [
@@ -165,6 +168,7 @@ curl  -XPOST -H  "Content-Type:application/json"  'http://localhost:9200/myindex
     }
   ]
 }
+
 ```
 
 ## reference
