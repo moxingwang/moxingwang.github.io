@@ -48,10 +48,10 @@ docker run -it --rm --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=debezium -e
 * [download](https://www.elastic.co/cn/downloads/elasticsearch)
 * 启动,安装目录下 `bin/elasticsearch`
 
-## 配置connect
+## 配置connect
   截止目前已经有了本地的`MySQL`,`kafka`,`kafka connect`,`elasticearch`,接下来配置kafka connect,通过配置好connect能够让debezium读取到binlog把MySQL的数据change事件写入到kafka的topic中.
 
-  kafka connect为我们提供了restful的访问方式,详细文档查看[Kafka Connect REST Interface](https://docs.confluent.io/current/connect/references/restapi.html).
+  kafka connect为我们提供了restful的访问方式,详细文档查看[Kafka Connect REST Interface](https://docs.confluent.io/current/connect/references/restapi.html).
 
 #### 新增一个connect
 
@@ -97,17 +97,17 @@ connector创建成功之后,可以通过[http://localhost:8083/connectors/](http
 ![](https://github.com/m65536/resource/blob/master/image/kafka/local_connector_2.png?raw=true)
 
 
-connector创建成功后,接下来应该测试debezium是否开始工作了,MySQL发生insert或者update 的时候有没有写入kafka.
+connector创建成功后,接下来应该测试debezium是否开始工作了,MySQL发生insert或者update 的时候有没有写入kafka.
 
 `[注意事项]`
 
-  笔者在配置connector的过程中也遇到过了好多问题,一些比较重要的东西也记录下来了,如果你在使用过程中出现问题可以查看文末`常见问题`里面是否有同样的问题.
+  笔者在配置connector的过程中也遇到过了好多问题,一些比较重要的东西也记录下来了,如果你在使用过程中出现问题可以查看文末`常见问题`里面是否有同样的问题.
 
 #### debezium kafka topic消费
-  在上面的debezium配置中可以看到参数`database.server.name`,`database.whitelist`,debezium connector会处理MySQL的binlog后对应数据库不同的表将消息发送到不通的topic上,其中这些topic的构成方式为:[database.server.name].[数据库名称].[表名称],记下来按步骤操作.
+  在上面的debezium配置中可以看到参数`database.server.name`,`database.whitelist`,debezium connector会处理MySQL的binlog后对应数据库不同的表将消息发送到不通的topic上,其中这些topic的构成方式为:[database.server.name].[数据库名称].[表名称],记下来按步骤操作.
 
 
-* 1. 在kafka的安装目录下使用`bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic trade_order_0.inventory.orders`消费`trade_order_0.inventory.orders`这个topic.
+* 1. 在kafka的安装目录下使用`bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic trade_order_0.inventory.orders`消费`trade_order_0.inventory.orders`这个topic.
 
 * 2. 任意修改orders表的一行数据,然后回到第一步就可以观察到.
 
@@ -115,13 +115,13 @@ connector创建成功后,接下来应该测试debezium是否开始工作了,MySQ
 
   看到这样的结果说明debezium已经开始工作了.
 
-#### spring boot消费kafka消息并且写入elasticsearch中
+#### spring boot消费kafka消息并且写入elasticsearch中
   
-* Demo代码已经在[https://github.com/m65536/practice/tree/master/search/elasticsearch](https://github.com/m65536/practice/tree/master/search/elasticsearch)全部实现.下载后配合上面安装好了的环境可以直接启动运行(当前版本使用的6.5,如果需要使用2.X,es客户端配置略有不同).
+* Demo代码已经在[https://github.com/m65536/practice/tree/master/search/elasticsearch](https://github.com/m65536/practice/tree/master/search/elasticsearch)全部实现.下载后配合上面安装好了的环境可以直接启动运行(当前版本使用的6.5,如果需要使用2.X,es客户端配置略有不同).
 
 * [Index Templates](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-templates.html#indices-templates)
 
-  使用创建index之前可以创建index template,使用简单并且方便灵活.
+  使用创建index之前可以创建index template,使用简单并且方便灵活.
 
 * 创建template
 
@@ -153,7 +153,7 @@ connector创建成功后,接下来应该测试debezium是否开始工作了,MySQ
 
 ![](https://github.com/m65536/resource/blob/master/image/kafka/local_debezoim_5.png?raw=true)
 
-  此时说明MySQL到connect到kafka再到server再到es整个流程通了,同时可以通过server去查询es[TestController](https://github.com/m65536/practice/blob/master/search/elasticsearch/src/main/java/top/moxingwang/elasticsearch/controller/TestController.java)-[http://localhost:8080/test/list](http://localhost:8080/test/list)
+  此时说明MySQL到connect到kafka再到server再到es整个流程通了,同时可以通过server去查询es[TestController](https://github.com/m65536/practice/blob/master/search/elasticsearch/src/main/java/top/moxingwang/elasticsearch/controller/TestController.java)-[http://localhost:8080/test/list](http://localhost:8080/test/list)
 
 ![](https://github.com/m65536/resource/blob/master/image/kafka/local_debezium_6.png?raw=true)
 
