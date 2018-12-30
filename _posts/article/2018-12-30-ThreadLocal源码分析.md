@@ -18,6 +18,6 @@ public class ThreadLocal<T> {
 ```
 
 
-上面两端代码截取jdk8源码,`Thread`对象内部定义了成员变量`ThreadLocal.ThreadLocalMap threadLocals = null`,`ThreadLocalMap`为`ThreadLocal`的一个静态内部类,三者的关系就这么简单.
+上面两段代码截取jdk8源码,`Thread`对象内部定义了成员变量`ThreadLocal.ThreadLocalMap threadLocals = null`,`ThreadLocalMap`为`ThreadLocal`的一个静态内部类,三者的关系就这么简单.
 
 ![](https://raw.githubusercontent.com/m65536/resource/master/image/java/thread/thread_local_0.png)
