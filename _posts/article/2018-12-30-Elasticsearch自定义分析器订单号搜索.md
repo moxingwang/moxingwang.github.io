@@ -15,7 +15,7 @@ D5046240000014238
 OD5046240000014238
 ```
 
-# 自定义分析器
+## 自定义分析器
 * 创建索引指定分析器
 ```
 curl  -XPUT -H  "Content-Type:application/json"  'http://localhost:9200/myindex' -d '{
