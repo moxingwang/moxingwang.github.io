@@ -27,7 +27,45 @@ public class ThreadLocal<T> {
 ![](https://github.com/m65536/resource/blob/master/image/java/thread/thread_local_0.png?raw=true)
 
 
-1. 
+假定在业务系统中有这样两个service和对应的方法方法.
+
+* XService1
+```
+public class XService1 {
+    ThreadLocal<String> threadLocal1 = new ThreadLocal<String>();
+
+    public void testThreadLocalValue() {
+        threadLocal1.set("test1");
+        String str1 = threadLocal1.get();
+    }
+}
+```
+
+* XService2
+```
+public class XService2 {
+    ThreadLocal<String> threadLocal2 = new ThreadLocal<String>();
+
+    @Test
+    public void testThreadLocalValue() {
+        threadLocal2.set("test2");
+        String str2 = threadLocal2.get();
+    }
+
+}
+```
+
+按照上图的例子,同时假定有两个线程执行这两个Service对应的方法,可模拟其执行过程.
+
+1. Thead1执行XService1.testThreadLocalValue,此时threadLocal1.set("test1"),在Thead1.threadLocals对象中添加了一个新的Entry其key为threadLocal1,value为"test1";
+
+2. Thead2执行XService1.testThreadLocalValue,此时threadLocal1.set("test1"),在Thead2.threadLocals对象中添加了一个新的Entry其key为threadLocal1,value为"test1";
+
+3. Thead1执行XService2.testThreadLocalValue,此时threadLocal2.set("test2"),在Thead1.threadLocals对象中添加了一个新的Entry其key为threadLocal2,value为"test2";
+
+4. Thead2执行XService2.testThreadLocalValue,此时threadLocal2.set("test2"),在Thead2.threadLocals对象中添加了一个新的Entry其key为threadLocal2,value为"test2";
+
+
 
 
 # 源码分析
