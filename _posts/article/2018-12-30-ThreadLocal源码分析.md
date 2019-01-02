@@ -1,6 +1,9 @@
 为了彻底搞明白`ThreadLocal`的工作原理,下面会截取代码和画图详细说明.
 
-先搞清楚`Thread`,`ThreadLocal`,`ThreadLocalMap`这三个类的关系.
+
+# 简单ThreadLocal工作流程
+
+* 首先搞清楚`Thread`,`ThreadLocal`,`ThreadLocalMap`这三个类的关系.
 
 
 ```
@@ -18,9 +21,13 @@ public class ThreadLocal<T> {
 ```
 
 
-上面两段代码截取jdk8源码,`Thread`对象内部定义了成员变量`ThreadLocal.ThreadLocalMap threadLocals = null`,`ThreadLocalMap`为`ThreadLocal`的一个静态内部类,三者的关系就这么简单.
+上面两段代码截取jdk8源码,`Thread`对象内部定义了成员变量`ThreadLocal.ThreadLocalMap threadLocals = null`,`ThreadLocalMap`为`ThreadLocal`的一个静态内部类,三者的代码关系就这么简单.
 
-![](https://raw.githubusercontent.com/m65536/resource/master/image/java/thread/thread_local_0.png)
+
+![](https://github.com/m65536/resource/blob/master/image/java/thread/thread_local_0.png?raw=true)
+
+
+1. 
 
 
 # 源码分析
@@ -70,6 +77,7 @@ private int expungeStaleEntry(int staleSlot) {
             tab[i] = null;
             size--;
         } else {
+        	//重新计算hash
             int h = k.threadLocalHashCode & (len - 1);
             if (h != i) {
                 tab[i] = null;
