@@ -31,3 +31,6 @@ npm ERR! node v6.9.1
 npm ERR! npm v3.10.8
 npm ERR! code MODULE_NOT_FOUND
 ```
+
+# Mac terminal名称太长
+把`PS1='\h:\W \u\$ '`换成`PS1='\w>'`
