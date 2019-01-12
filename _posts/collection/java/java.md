@@ -8,12 +8,14 @@ source ~/.bash_profile
 
 
 # maven相关项目
-* 如何运行maven项目
+### 如何运行maven项目
 ```
 mvn exec:java -Dexec.mainClass="com.alibaba.fescar.tm.dubbo.impl.AccountServiceImpl"
 ```
 
-* maven初始化创建项目
+[使用Maven运行Java main的3种方式](https://blog.csdn.net/qbg19881206/article/details/19850857)
+
+### maven初始化创建项目
 ```
 mvn archetype:generate -DgroupId=top.moxingwang -DartifactId=fescar -Dversion=1.0-SNAPSHOT -Dpackage=top.moxingwang.fescar
 ```
