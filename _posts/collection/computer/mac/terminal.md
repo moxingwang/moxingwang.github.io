@@ -33,4 +33,7 @@ npm ERR! code MODULE_NOT_FOUND
 ```
 
 # Mac terminal名称太长
+```
+sudo vi /etc/bashrc
 把`PS1='\h:\W \u\$ '`换成`PS1='\w>'`
+```
