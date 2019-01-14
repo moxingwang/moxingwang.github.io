@@ -31,3 +31,9 @@ npm ERR! node v6.9.1
 npm ERR! npm v3.10.8
 npm ERR! code MODULE_NOT_FOUND
 ```
+
+# Mac terminal计算机名称或者用户名太长怎么办
+```
+sudo vi /etc/bashrc
+把`PS1='\h:\W \u\$ '`换成`PS1='\w>'`
+```
