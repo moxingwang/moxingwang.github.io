@@ -3,7 +3,7 @@
 
 # reference
 * [一则线上MySql连接异常的排查过程](https://www.cnblogs.com/zhukunrong/p/4525955.html)
-
+* [预编译语句(Prepared Statements)介绍，以MySQL为例](https://www.cnblogs.com/micrari/p/7112781.html)
 
 ```
 Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLNonTransientConnectionException: No operations allowed after connection closed.
