@@ -15,3 +15,6 @@ https://blog.csdn.net/f6619082/article/details/73473028
 * [让变慢的Mac获得重生这15个Tips不得不学](https://bbs.feng.com/mobile-news-read-673744.html)
 
 ## Mac修改mac地址[acbook修改mac地址](http://geoffrey-qiao.iteye.com/blog/2053137)
+```
+sudo ifconfig en0 ether 20-7C-8F-73-B1-1E 
+```
