@@ -22,3 +22,7 @@ editor.minimap.enabled
 * pretty print
 * 代码选择 shift+up/down / shift+cmd+left/right/up/down
 * 打开最近工程 ctl+r
+* block comment ctl+shift+/
+* 打开类定义文件 go to type definition ctl+b
+* explorer alt+1
+* toggleSidebarVisibility 关闭左侧栏 alt+2
