@@ -11,3 +11,4 @@ order-*.properties.lock
 /disconf/
 /_site/
 *.DS_Store*
+.vscode

@@ -14,7 +14,7 @@ editor.minimap.enabled
 * open next recently ctl+tab
 * show all commands F1
 * quick open F2
-* close other editors cmd+shift+w
+* close other editors ctl+shift+w
 * move line up alt+up
 * move line down alt+down
 * 拖动鼠标选中代码 alt+shift+鼠标
@@ -25,4 +25,4 @@ editor.minimap.enabled
 * block comment ctl+shift+/
 * 打开类定义文件 go to type definition ctl+b
 * explorer alt+1
-* toggleSidebarVisibility 关闭左侧栏 alt+2
+* toggleSidebarVisibility 关闭左侧栏 alt+q
