@@ -7,8 +7,8 @@ editor.minimap.enabled
 > command + '+' / command + '-'
 
 # common hot keys
-* back ctl+alt+<-
-* forward ctl+alt+->
+* go back ctl+alt+<-
+* go forward ctl+alt+->
 * open previous editor alt+<-
 * open next editor alt+->
 * open next recently ctl+tab
