@@ -1,3 +1,4 @@
+# vscode
 * 关闭预览面板
 ```
 editor.minimap.enabled
@@ -14,7 +15,7 @@ editor.minimap.enabled
 * open next recently ctl+tab
 * show all commands F1
 * quick open F2
-* quick open view alt+q
+* quick open view alt+2
 * close other editors ctl+shift+w
 * move line up alt+up
 * move line down alt+down
@@ -25,7 +26,7 @@ editor.minimap.enabled
 * 打开最近工程 ctl+r
 * block comment ctl+shift+/
 * 打开类定义文件 go to type definition ctl+b
-* explorer alt+1
+* explorer alt+q
 * toggleSidebarVisibility 关闭左侧栏 alt+w
 * cursorWordEndRightSelect ctrl+shift+right
 * cursorWordStartLeftSelect ctrl+shift+left
@@ -36,3 +37,16 @@ editor.minimap.enabled
 * 智能选择 smartSelect.grow alt+s
 * 关闭所有文件 ctl+k+w
 * delete line ctl+y
+* 版本控制 SCM alt+e
+
+# idea
+### 窗口类
+* search everywhere F1
+* search file F2(先f1再f2)
+* close ctl+w
+* close other ctl+shift+w
+* open recent ctl+r
+* togo line ctl+g
+* debug alt+d
+* extend selection alt+s
+* 版本控制 version control alt+e
