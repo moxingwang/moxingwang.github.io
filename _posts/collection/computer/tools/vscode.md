@@ -30,3 +30,4 @@ editor.minimap.enabled
 * cursorWordEndRightSelect ctrl+shift+right
 * cursorWordStartLeftSelect ctrl+shift+left
 * organizeImports shift+alt+o
+* toggleTerminal alt+1
