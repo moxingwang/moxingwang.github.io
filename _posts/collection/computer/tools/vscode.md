@@ -34,3 +34,4 @@ editor.minimap.enabled
 * triggerParameterHints ctrl+shift+space
 * triggerSuggest ctrl+shift+space
 * 智能选择 smartSelect.grow alt+s
+* 关闭所有文件 ctl+k+w
