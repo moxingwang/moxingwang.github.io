@@ -29,3 +29,4 @@ editor.minimap.enabled
 * toggleSidebarVisibility 关闭左侧栏 alt+w
 * cursorWordEndRightSelect ctrl+shift+right
 * cursorWordStartLeftSelect ctrl+shift+left
+* organizeImports shift+alt+o
