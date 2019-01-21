@@ -31,3 +31,5 @@ editor.minimap.enabled
 * cursorWordStartLeftSelect ctrl+shift+left
 * organizeImports shift+alt+o
 * toggleTerminal alt+1
+* triggerParameterHints ctrl+shift+space
+* triggerSuggest ctrl+shift+space
