@@ -35,3 +35,4 @@ editor.minimap.enabled
 * triggerSuggest ctrl+shift+space
 * 智能选择 smartSelect.grow alt+s
 * 关闭所有文件 ctl+k+w
+* delete line ctl+y
