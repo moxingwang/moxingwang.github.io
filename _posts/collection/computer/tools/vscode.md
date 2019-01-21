@@ -33,3 +33,4 @@ editor.minimap.enabled
 * toggleTerminal alt+1
 * triggerParameterHints ctrl+shift+space
 * triggerSuggest ctrl+shift+space
+* 智能选择 smartSelect.grow alt+s
