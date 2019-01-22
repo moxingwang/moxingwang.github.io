@@ -32,7 +32,6 @@ editor.minimap.enabled
 
 * triggerParameterHints ctrl+shift+space
 * triggerSuggest ctrl+shift+space
-* smartSelect.grow ctrl+e
 * 关闭所有文件 ctl+k+w
 * delete line ctl+y
 
@@ -48,8 +47,8 @@ editor.minimap.enabled
 * recent files ctrl+tab
 * replace ctrl+r
 * replace in files ctrl+shift+r
-* recent project ctrl+q
-
+* open recent ctrl+e
+* smartSelect.grow ctrl+q
 
 # idea
 ### 窗口类
@@ -60,7 +59,7 @@ editor.minimap.enabled
 * recent open ctl+q
 * togo line ctl+g
 * debug alt+d
-* extend selection ctrl+e
+
 
 
 
@@ -81,4 +80,5 @@ editor.minimap.enabled
 * recent files ctrl+tab 
 * replace ctrl+r
 * replace in files ctrl+shift+r
-* open recent ctrl+q
+* recent project ctrl+e
+* extend selection ctrl+q
