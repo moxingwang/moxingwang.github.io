@@ -49,6 +49,9 @@ editor.minimap.enabled
 * replace in files ctrl+shift+r
 * open recent ctrl+e
 * smartSelect.grow ctrl+q
+* changeLanguageMode ctrl+shift+alt+c
+
+
 
 # idea
 ### 窗口类
