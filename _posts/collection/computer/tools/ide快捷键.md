@@ -18,7 +18,7 @@ editor.minimap.enabled
 * move line up shift+alt+up
 * move line down shift+alt+down
 * 拖动鼠标选中代码 alt+shift+鼠标
-* code format alt+shift+f
+* code format alt+shift+f,同时pretty json的也设置这样
 * pretty print
 * 代码选择 shift+up/down / shift+cmd+left/right/up/down
 * 打开最近工程 ctl+r
