@@ -39,9 +39,9 @@ editor.minimap.enabled
 * 复制 shift+箭头
 * copyLinesDownAction ctrl+D
 
-* toggleTerminal ctrl+`
 * explorer alt+1
 * toggleSidebarVisibility 关闭左侧栏 alt+2
+* toggleTerminal lat+3
 * 版本控制 SCM alt+4
 * open previous editor alt+左箭头
 * open next editor alt+右箭头
@@ -74,11 +74,10 @@ editor.minimap.enabled
 * move line down shift+alt+down
 * next method alt+up/down
 * move method ctrl+shift+up/down 
-* terminal ctrl+`
 * project alt+1
 * hide all tools alt+2
-* database alt+3
-* version control alt+4
+* terminal alt+3
+* database alt+4
 * recent files ctrl+tab 
 * replace ctrl+r
 * replace in files ctrl+shift+r
