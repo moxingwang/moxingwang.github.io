@@ -37,7 +37,7 @@ editor.minimap.enabled
 * 智能选择 smartSelect.grow alt+s
 * 关闭所有文件 ctl+k+w
 * delete line ctl+y
-* 版本控制 SCM alt+e
+* 版本控制 SCM alt+r
 
 # idea
 ### 窗口类
@@ -48,5 +48,7 @@ editor.minimap.enabled
 * open recent ctl+r
 * togo line ctl+g
 * debug alt+d
-* extend selection alt+s
-* 版本控制 version control alt+e
+* extend selection ctrl+e
+* database alt+e
+* version control alt+r
+* full screen alt+w
