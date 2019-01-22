@@ -52,3 +52,7 @@ editor.minimap.enabled
 * database alt+e
 * version control alt+r
 * full screen alt+w
+* suggestion shift+ctrl+space 
+* Show Intention Actions alt+enter
+* Optimize Imports ctrl+alt+o
+* format shift+alt+F
