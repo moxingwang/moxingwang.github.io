@@ -10,12 +10,10 @@ editor.minimap.enabled
 # common hot keys
 * go back ctl+alt+<-
 * go forward ctl+alt+->
-* open previous editor alt+<-
-* open next editor alt+->
-* open next recently ctl+tab
+
 * show all commands F1
 * quick open F2
-* quick open view alt+2
+
 * close other editors ctl+shift+w
 * move line up shift+alt+up
 * move line down shift+alt+down
@@ -26,21 +24,31 @@ editor.minimap.enabled
 * 打开最近工程 ctl+r
 * block comment ctl+shift+/
 * 打开类定义文件 go to type definition ctl+b
-* explorer alt+q
-* toggleSidebarVisibility 关闭左侧栏 alt+w
+
+
 * cursorWordEndRightSelect ctrl+shift+right
 * cursorWordStartLeftSelect ctrl+shift+left
 * organizeImports shift+alt+o
-* toggleTerminal alt+1
+
 * triggerParameterHints ctrl+shift+space
 * triggerSuggest ctrl+shift+space
-* 智能选择 smartSelect.grow alt+s
+* smartSelect.grow ctrl+e
 * 关闭所有文件 ctl+k+w
 * delete line ctl+y
-* 版本控制 SCM alt+r
+
 * 复制 shift+箭头
 * copyLinesDownAction ctrl+D
 
+* toggleTerminal ctrl+`
+* explorer alt+1
+* toggleSidebarVisibility 关闭左侧栏 alt+2
+* 版本控制 SCM alt+4
+* open previous editor alt+左箭头
+* open next editor alt+右箭头
+* recent files ctrl+tab
+* replace ctrl+r
+* replace in files ctrl+shift+r
+* recent project ctrl+q
 
 
 # idea
@@ -49,13 +57,13 @@ editor.minimap.enabled
 * search file F2(先f1再f2)
 * close ctl+w
 * close other ctl+shift+w
-* open recent ctl+r
+* recent open ctl+q
 * togo line ctl+g
 * debug alt+d
 * extend selection ctrl+e
-* database alt+e
-* version control alt+r
-* full screen alt+w
+
+
+
 * suggestion shift+ctrl+space 
 * Show Intention Actions alt+enter
 * Optimize Imports ctrl+alt+o
@@ -64,3 +72,14 @@ editor.minimap.enabled
 * Duplicate line ctrl+D
 * move line up shift+alt+up
 * move line down shift+alt+down
+* next method alt+up/down
+* move method ctrl+shift+up/down 
+* terminal ctrl+`
+* project alt+1
+* hide all tools alt+2
+* database alt+3
+* version control alt+4
+* recent files ctrl+tab 
+* replace ctrl+r
+* replace in files ctrl+shift+r
+* open recent ctrl+q
