@@ -17,8 +17,8 @@ editor.minimap.enabled
 * quick open F2
 * quick open view alt+2
 * close other editors ctl+shift+w
-* move line up alt+up
-* move line down alt+down
+* move line up shift+alt+up
+* move line down shift+alt+down
 * 拖动鼠标选中代码 alt+shift+鼠标
 * code format alt+shift+f
 * pretty print
@@ -38,6 +38,10 @@ editor.minimap.enabled
 * 关闭所有文件 ctl+k+w
 * delete line ctl+y
 * 版本控制 SCM alt+r
+* 复制 shift+箭头
+* copyLinesDownAction ctrl+D
+
+
 
 # idea
 ### 窗口类
@@ -56,3 +60,7 @@ editor.minimap.enabled
 * Show Intention Actions alt+enter
 * Optimize Imports ctrl+alt+o
 * format shift+alt+F
+* 复制 shift+箭头
+* Duplicate line ctrl+D
+* move line up shift+alt+up
+* move line down shift+alt+down
