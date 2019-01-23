@@ -48,7 +48,7 @@ editor.minimap.enabled
 * replace ctrl+r
 * replace in files ctrl+shift+r
 * open recent ctrl+e
-* smartSelect.grow ctrl+q
+* smartSelect.grow ctrl+w
 * changeLanguageMode ctrl+shift+alt+c
 
 
@@ -84,4 +84,4 @@ editor.minimap.enabled
 * replace ctrl+r
 * replace in files ctrl+shift+r
 * recent project ctrl+e
-* extend selection ctrl+q
+* extend selection ctrl+w
