@@ -1,1 +1,0 @@
-* [跟着 Github 学习 Restful HTTP API 设计](http://cizixs.com/2016/12/12/restful-api-design-guide?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)

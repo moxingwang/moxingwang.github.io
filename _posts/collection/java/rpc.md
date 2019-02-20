@@ -1,1 +1,0 @@
-* [Hessian原理分析](http://www.cnblogs.com/happyday56/p/4268249.html)
