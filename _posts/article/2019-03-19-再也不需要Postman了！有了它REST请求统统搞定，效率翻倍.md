@@ -164,23 +164,5 @@ GET https://httpbin.org/digest-auth/realm/user/passwd
 Authorization: Digest {{username}} {{password}}
 ```
 
-### Authorization by token, part 1. Retrieve and save token.
-```
-POST https://httpbin.org/post
-Content-Type: application/json
-
-{
-  "token": "my-secret-token"
-}
-
-> {% client.global.set("auth_token", response.body.json.token); %}
-```
-
-### Authorization by token, part 2. Use token to authorize.
-```
-GET https://httpbin.org/headers
-Authorization: Bearer {{auth_token}}
-```
-
 # 总结
 如果你正在使用VSCode或者IntelliJ IDE一定要使用这两款优秀的插件，让你的工作方便省事，方便发送请求，方便查看执行结构，方便保存，方便分享。
