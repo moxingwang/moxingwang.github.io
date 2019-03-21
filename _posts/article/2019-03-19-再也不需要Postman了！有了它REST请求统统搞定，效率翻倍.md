@@ -166,3 +166,6 @@ Authorization: Digest {{username}} {{password}}
 
 # 总结
 如果你正在使用VSCode或者IntelliJ IDE一定要使用这两款优秀的插件，让你的工作方便省事，方便发送请求，方便查看执行结构，方便保存，方便分享。
+
+
+我的博客即将同步至腾讯云+社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=70ob6des95cn
