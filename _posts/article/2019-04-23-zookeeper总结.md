@@ -1,8 +1,9 @@
-* 集群任务
+#### 集群任务
 
     ![](https://github.com/moxingwang/resource/blob/master/image/zookeeper/workers.png?raw=true)
 
-* 主从架构
+
+### 主从架构
 
     ![](https://github.com/moxingwang/resource/blob/master/image/zookeeper/worker-master-slae.png?raw=true)
 
