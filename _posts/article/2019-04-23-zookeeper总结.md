@@ -1,3 +1,6 @@
+`zookeeper`知识详细总结
+
+
 #### 集群任务
 
     ![](https://github.com/moxingwang/resource/blob/master/image/zookeeper/workers.png?raw=true)
